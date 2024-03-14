@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  color: #181717;
+}
+
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  border-width: thin;
+  overflow: scroll;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "DM Sans", sans-serif, "Times New Roman", Times, arial, serif;
+  background-color: #f3f3f3;
+}
+.social-links {
+  list-style-position: inside;
+  padding-left: 3px;
+}
+
+.social-link::before {
+  content: "";
+  margin-left: -20px;
+}
+.about-link:hover svg {
+  fill: #c92627 !important;
+  stroke: #c92627 !important;
+  color: #c92627 !important;
+
+  filter: saturate(0.5);
+}
