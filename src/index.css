@@ -23,19 +23,15 @@ body {
   font-family: "DM Sans", sans-serif, "Times New Roman", Times, arial, serif;
   background-color: #f3f3f3;
 }
-.social-links {
-  list-style-position: inside;
-  padding-left: 3px;
-}
 
-.social-link::before {
-  content: "";
-  margin-left: -20px;
-}
 .about-link:hover svg {
   fill: #c92627 !important;
   stroke: #c92627 !important;
   color: #c92627 !important;
-
   filter: saturate(0.5);
+}
+
+.social-links,
+.social-link-bullet {
+  margin-left: -2px;
 }
