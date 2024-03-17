@@ -29,21 +29,20 @@ export const ContactForm = () => {
   });
   return (
     <>
-      <div className="contact-form relative py-3 ">
-        <div className=" hidden md:block absolute inset-0 transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-lg border-2 border-neutral-700 shadow-[3px_3px_0_0_rgba(0,0,0,1)] shadow-accentColor saturate-50 bg-accentBackground"></div>
+      <div className="contact-form relative py-3">
+        <div className="hidden md:block absolute inset-0 transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-lg border-2 border-neutral-700 shadow-[3px_3px_0_0_rgba(0,0,0,1)] shadow-accentColor saturate-50 bg-accentBackground"></div>
 
-        <div className="relative w-full ">
-          <section className=" bg-primaryColor ">
-            <div className=" border-2 rounded-lg border-neutral-800 shadow-[6px_6px_0_0_#0c0c0c] shadow-neutral-700/100 p-2 md:p-12 lg:-p-5 flex flex-col items-center justify-center">
+        <div className="relative w-full">
+          <section className="bg-primaryColor">
+            <div className="border-2 rounded-lg border-neutral-800 shadow-[6px_6px_0_0_#0c0c0c] shadow-neutral-700/100 p-2 md:p-12 lg:-p-5 flex flex-col items-center justify-center">
               <form
                 action="https://getform.io/f/7230c610-1d21-477c-a7a0-9813c9b45406"
                 method="POST"
                 acceptCharset="UTF-8"
                 encType="multipart/form-data"
-                className="flex flex-col rounded-lg overflow-hidden shadow-inset-custom px-2 pt-6 pb-2 "
+                className="flex flex-col rounded-lg overflow-hidden shadow-inset-custom px-2 pt-6 pb-2"
               >
-                {" "}
-                <h6 className="text-lg font-semibold mb-4">Contact me </h6>
+                <h6 className="text-lg font-semibold mb-4">Contact me</h6>
                 <div className="mb-4">
                   <label
                     htmlFor="userName"
@@ -61,7 +60,7 @@ export const ContactForm = () => {
                     autoComplete="off"
                     onChange={handleInputChange}
                     className="hover:shadow bg-transparent border-b-2 border-neutral-800"
-                  />{" "}
+                  />
                 </div>
                 <div className="mb-4">
                   <label
@@ -81,7 +80,7 @@ export const ContactForm = () => {
                     autoComplete="off"
                     onChange={handleInputChange}
                     className="hover:shadow bg-transparent border-b-2 border-neutral-800"
-                  />{" "}
+                  />
                 </div>
                 <div className="mb-4">
                   <label
@@ -112,7 +111,7 @@ export const ContactForm = () => {
                 />
                 <button
                   type="submit"
-                  className="w-fit mb-3 border-b-2 border-neutral-800  hover:border-accentColor hover:saturate-50"
+                  className="w-fit mb-3 border-b-2 border-neutral-800 hover:border-accentColor hover:saturate-50"
                 >
                   Send
                 </button>

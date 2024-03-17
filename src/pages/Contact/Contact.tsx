@@ -21,12 +21,11 @@ export const Contact = () => {
               Feel free to contact me. I'm here to help and always open to new
               opportunities.
             </p>
-            <h6 className="text-lg font-semibold md:text-xl mb-1 flex flex-row  justify-center items-center gap-2">
+            <h6 className="text-lg font-semibold md:text-xl mb-1 flex flex-row justify-center items-center gap-2">
               <span className="w-2 h-2 block bg-accentColor saturate-50 "></span>
               Social Media:
             </h6>
             <div className="flex flex-row gap-2 ">
-              {" "}
               <span>Connect with me on</span>
               <a
                 href="https://www.linkedin.com/in/hazany/"

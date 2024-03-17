@@ -11,14 +11,14 @@ export const PageHeader = ({ title }: pageHeaderProps) => {
     location.pathname.slice(1).slice(1);
   return (
     <>
-      <div className="page-header flex flex-row items-center gap-5 ">
+      <div className="page-header flex flex-row items-center gap-5">
         <m.span
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, delay: 0.6 }}
           exit={{ opacity: 0 }}
           key="title"
-          className=" font-extrabold text-2xl 2xl:text-3xl"
+          className="font-extrabold text-2xl 2xl:text-3xl"
         >
           <span className="text-accentColor saturate-50">{" > "}</span>
           {title ? title : pathname}

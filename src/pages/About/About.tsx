@@ -81,6 +81,7 @@ export const About = () => {
                     <Link
                       to="/contact"
                       className=" w-full py-1 font-semibold underline italic mx-1 hover:decoration-accentColor hover:saturate-50 "
+                      aria-label="Connect with Hazan Yigit"
                     >
                       connect
                     </Link>

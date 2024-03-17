@@ -7,29 +7,30 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <>
-      <div className="project-card relative " key="project-card">
+      <div className="project-card relative" key="project-card">
         <span className="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-neutral-800 rounded-lg"></span>
-        <div className="flex flex-col relative overflow-hidden shadow-lg  bg-neutral-100 border-2 border-neutral-800 rounded-lg hover:scale-105 hover:border-accentColor hover:saturate-50 transition duration-500">
-          <div className="m-2 ">
+        <div className="flex flex-col relative overflow-hidden shadow-lg bg-neutral-100 border-2 border-neutral-800 rounded-lg hover:scale-105 hover:border-accentColor hover:saturate-50 transition duration-500">
+          <div className="m-2">
             <img
               src={project.projectImg}
               alt={project.projectInfo}
-              className="w-full h-[225px] rounded-lg saturate-50  "
+              className="w-full h-[225px] rounded-lg saturate-50"
             />
           </div>
-          <div className="flex flex-col rounded-lg overflow-hidden max-w-xs ">
+          <div className="flex flex-col rounded-lg overflow-hidden max-w-xs">
             <div className="px-6 py-4 mb-auto">
               <h4 className="text-lg font-semibold w-fit truncate capitalize border-b-2 border-neutral-800">
                 {project.projectTitle}
               </h4>
-              <div className="px-2 py-3 flex flex-row items-center justify-between ">
+              <div className="px-2 py-3 flex flex-row items-center justify-between">
                 {project.projectLive && (
                   <a
                     href={project.projectLive}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="py-1 text-xs font-regular mr-1 flex flex-row items-center border-b-2 border-transparent  hover:border-accentColor "
+                    className="py-1 text-xs font-regular mr-1 flex flex-row items-center border-b-2 border-transparent hover:border-accentColor"
                   >
+                    {" "}
                     <svg
                       width="13px"
                       height="13px"
@@ -49,15 +50,16 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                       <line x1="7.14" y1="32.46" x2="56.86" y2="31.85" />
                       <path d="M53.57,57,58,52.56l-8-8,4.55-2.91a.38.38,0,0,0-.12-.7L39.14,37.37a.39.39,0,0,0-.46.46L42,53.41a.39.39,0,0,0,.71.13L45.57,49Z" />
                     </svg>
-                    <span className="ml-1 font-medium ">Live</span>
+                    <span className="ml-1 font-medium">Live</span>
                   </a>
                 )}
                 <a
                   href={project.projectOnGithub}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-1 text-xs font-regular  mr-1 flex flex-row items-center border-b-2 border-transparent hover:border-accentColor"
+                  className="py-1 text-xs font-regular mr-1 flex flex-row items-center border-b-2 border-transparent hover:border-accentColor"
                 >
+                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="13px"

@@ -5,7 +5,7 @@ import { HeroImg } from "../../components/HeroImg/HeroImg";
 export const Home = () => {
   return (
     <>
-      <div className="home h-[85vh] mx-auto flex px-5 py-5 lg:flex-row flex-col items-center justify-center">
+      <div className="home h-[85vh] flex flex-col items-center justify-center mx-auto px-5 py-5 lg:flex-row">
         <m.div
           key="heroImg"
           initial={{ opacity: 0, x: -300 }}
@@ -15,12 +15,10 @@ export const Home = () => {
             delay: 0.8,
             ease: [0.455, 0.03, 0.515, 0.955],
           }}
-          className=""
+          className="hero-img mt-4 lg:w-full lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl"
         >
-          <div className="hero-img mt-4 lg:w-full lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl">
-            <HeroImg />
-            <span className="hidden">Image by macrovector on Freepik.</span>
-          </div>
+          <HeroImg />
+          <span className="hidden">Image by macrovector on Freepik.</span>
         </m.div>
         <m.div
           key="intro"
@@ -32,9 +30,9 @@ export const Home = () => {
             ease: [0.555, 0.04, 0.615, 0.955],
             duration: 1.2,
           }}
-          className="max-w-md mt-5 pl-12 lg:pl-0 flex flex-col justify-center items-start text-start text-base font-normal md:text-3xl xl:text-4xl "
+          className="max-w-md flex flex-col justify-center items-start text-start text-base font-normal mt-5 pl-12 lg:pl-0 md:text-3xl xl:text-4xl"
         >
-          <p className=" font-extrabold text-2xl md:text-4xl xl:text-5xl">
+          <p className="font-extrabold text-2xl md:text-4xl xl:text-5xl">
             Hi, I'm Hazan Yigit
             <m.span
               key="introText"
@@ -54,11 +52,11 @@ export const Home = () => {
               .
             </m.span>
           </p>
-          <p className="mt-1 md:mt-2 ">Front End Developer, from Stockholm.</p>
+          <p className="mt-1 md:mt-2">Front End Developer, from Stockholm.</p>
           <div className="about-link flex flex-col justify-center items-center mt-2">
             <Link
               to="/about"
-              className="w-full py-1 font-semibold md:text-2xl italic "
+              className="w-full font-semibold italic py-1 md:text-2xl"
             >
               Learn more
             </Link>

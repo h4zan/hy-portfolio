@@ -36,7 +36,7 @@ export const Layout = () => {
       <AnimatePresence initial={false} mode={"sync"}>
         <div
           key="wrapper"
-          className="wrapper sticky h-[calc(95vh)] overflow-y-auto flex flex-wrap flex-col border-neutral-800 border-2 m-5 "
+          className="wrapper sticky h-[calc(95vh)] flex flex-wrap flex-col overflow-y-auto border-neutral-800 border-2 m-5"
         >
           <div id="top-of-page" key="scrollTop" />
           <header key="header" className="">
@@ -46,7 +46,7 @@ export const Layout = () => {
               key="navigation"
             />
           </header>
-          <m.main key={location.pathname} className="mt-2 md:mt-3 ">
+          <m.main key={location.pathname} className="mt-2 md:mt-3">
             <Outlet />
             {isBackdropVisible && <Backdrop isVisible={isBackdropVisible} />}
           </m.main>

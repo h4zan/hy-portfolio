@@ -32,6 +32,7 @@ export const Projects = () => {
           initial="hidden"
           animate="show"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 md:gap-10 2xl:gap-3 p-4 pt-10 "
+          layout
         >
           {ProjectData.map((project: Project) => (
             <m.div
@@ -39,6 +40,7 @@ export const Projects = () => {
               variants={animateProjectsCards}
               exit={{ opacity: 0 }}
               className="mb-5 max-w-72"
+              layout
             >
               <ProjectCard project={project} key={project.id} />
             </m.div>
