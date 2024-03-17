@@ -2,7 +2,7 @@ import { Skills } from "../../components/Skills/Skills";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { motion as m } from "framer-motion";
 import { Link } from "react-router-dom";
-import hy from "../../assets/hy.webp";
+import hy from "/assets/hy.webp";
 const transition = {
   duration: 0.8,
   ease: [0.43, 0.13, 0.23, 0.96],
