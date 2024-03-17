@@ -36,7 +36,7 @@ export const Layout = () => {
       <AnimatePresence initial={false} mode={"sync"}>
         <div
           key="wrapper"
-          className="wrapper sticky h-[calc(95vh)] flex flex-wrap flex-col overflow-y-auto border-neutral-800 border-2 m-5"
+          className="wrapper absolute h-[calc(95vh)] top-0 left-0 right-0 flex flex-wrap flex-col overflow-y-auto border-neutral-800 border-2 m-5"
         >
           <div id="top-of-page" key="scrollTop" />
           <header key="header" className="">
