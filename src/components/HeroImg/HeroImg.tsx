@@ -37,19 +37,20 @@ export const HeroImg = () => {
         xlinkHref="http://www.w3.org/1999/xlink"
         aria-labelledby="landing-page-hero "
         role="img"
+        key="svg"
         initial={{
-          transform: "translateY(-2px)",
+          y: 0,
         }}
         animate={{
-          transform: "translateY(-16px)",
+          y: [-16, -2],
         }}
         transition={{
           repeat: Infinity,
           repeatType: "mirror",
           duration: 2,
           ease: "easeInOut",
+          delay: 2.3,
         }}
-        key="svg"
       >
         <title id="landing-page-hero">
           A computer screen with numbers falling. Binary code visualization on a
