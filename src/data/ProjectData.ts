@@ -5,7 +5,7 @@ export const ProjectData: Project[] = [
     id: 1,
     projectTitle: "Pottery Studio",
     projectImg: "../../src/assets/pottery-shop.webp",
-    projectInfo: "",
+    projectInfo: "E-commerce website: pottery products & workshops",
     projectSkills: ["React", "Tailwind", "Strapi, Stripe"],
     projectOnGithub: "https://github.com/h4zan/pottery-studio",
     projectLive: "",
