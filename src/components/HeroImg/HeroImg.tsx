@@ -54,7 +54,7 @@ export const HeroImg = () => {
       >
         <title id="landing-page-hero">
           A computer screen with numbers falling. Binary code visualization on a
-          computer screen.
+          computer screen. Image by macrovector on Freepik.
         </title>
 
         <g>

@@ -33,7 +33,7 @@ export const Layout = () => {
 
   return (
     <>
-      <AnimatePresence initial={false} mode={"sync"}>
+      <AnimatePresence mode={"sync"}>
         <div
           key="wrapper"
           className="wrapper absolute h-[calc(95vh)] top-0 left-0 right-0 flex flex-wrap flex-col overflow-y-auto border-neutral-800 border-2 m-5"
